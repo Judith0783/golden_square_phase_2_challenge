@@ -9,7 +9,21 @@ def test_if_does_not_contain_to_do():
     result = includes_to_do("hello")
     assert result == False
 
-    
+def test_if_string_is_empty():
+    result = includes_to_do(" ")
+    assert result == False 
+
+def test_if_string_contain_lower():
+    result = includes_to_do("#todo")
+    assert result == False    
+
+def test_if_test_raise_error():
+    with pytest.raises(Exception) as e:
+        includes_to_do("Completed")
+        error_message = str(e.value)
+        assert error_message == "Already completed"
+        
+        
 
 
 """
