@@ -19,9 +19,9 @@ def test_if_string_contain_lower():
 
 def test_if_test_raise_error():
     with pytest.raises(Exception) as e:
-        includes_to_do("Completed")
-        error_message = str(e.value)
-        assert error_message == "Already completed"
+        includes_to_do("COMPLETED")
+    error_message = str(e.value)
+    assert error_message == "Already completed"
         
         
 
