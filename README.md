@@ -1,4 +1,4 @@
-# golden_square_phase_2_challenge
+# golden_square_phase_2_challenge 
 ## 1. Describe the Problem
 Put or write the user story here. Add any clarifying notes you might have.
 As a user
